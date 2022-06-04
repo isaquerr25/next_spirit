@@ -110,7 +110,7 @@ export function NavLogin() {
 						width={'150px'}
 						minWidth={'150px'}
 						minHeight={'55px'}
-						src={'../../logo.png' ?? './logo.png'}
+						src={'../../spiritLogo.png' ?? './spiritLogo.png'}
 						alt='Tempest Invest'
 					/>
 					<Flex display={{ base: 'none', md: 'flex' }} ml={10}>
@@ -159,9 +159,9 @@ const DesktopNav = () => {
 	const popoverContentBgColor = useColorModeValue('teal', 'gray.800');
 
 	return (
-		<Stack direction={'row'} spacing={4}>
+		<Stack direction={'row'} spacing={4} justifyContent={'center'} >
 			{NAV_ITEMS.map((navItem) => (
-				<Box key={navItem.label}>
+				<Box key={navItem.label} >
 					<Popover trigger={'hover'} placement={'bottom-start'}>
 						<PopoverTrigger>
 							<Link

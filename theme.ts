@@ -1,12 +1,13 @@
-import { extendTheme } from '@chakra-ui/react';
+import { extendTheme, Button } from '@chakra-ui/react';
 
 export const theme = extendTheme({
 	styles: {
 		global: {
 			body: {
-				bg: '#001717',
+				bg: '#121212',
 				color: 'white'
-			}
+			},
+					
 		},
 		colors: {
 			'900': 'white',
@@ -21,9 +22,13 @@ export const theme = extendTheme({
 			'50': 'white',
             
 		},
+		Button:{
+			borderColor:'#FFF701',
+			color:'red'
+		},
 		fonts: {
 			heading: 'Roboto',
 			body: 'Roboto', 
-		}
+		},
 	}
 });

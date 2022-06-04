@@ -89,7 +89,7 @@ export function FooterModify() {
 							<Image
 								width={'300px'}
 
-								src={'../logo.png'??'./logo.png'}
+								src={'../spiritLogo.png'??'./spiritLogo.png'}
 								alt='Tempest Invest'
 							/>
 						</Box>

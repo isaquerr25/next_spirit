@@ -97,7 +97,7 @@ export function Nav() {
 					</Text> */}
 					<Image
 						width={'100px'}
-						src={'../logo.png'??'./logo.png'}
+						src={'../spiritLogo.png'??'./spiritLogo.png'}
 						alt='Tempest Invest'
 					/>
 
@@ -110,15 +110,22 @@ export function Nav() {
 					justify={'flex-end'}
 					direction={'row'}
 					spacing={6}>
+					
 					<Button
-						as={'a'}
+						onClick={()=>{Router.push('/home/login');}}
+						display={{ base: 'none', md: 'inline-flex' }}
 						fontSize={'sm'}
-						fontWeight={400}
-						variant={'link'}
-						href={'/home/login'}
+						fontWeight={600}
+						color={'white'}
 						
-					>
-						Sign In
+						border={'2px'}
+						borderColor={'#FFF701'}
+						background='transparent'
+						borderRadius={'3xl'}
+						_hover={{
+							borderColor: 'blue.800',
+						}}>
+						Login
 					</Button>
 					<Button
 						onClick={()=>{Router.push('/home/register');}}
@@ -126,11 +133,15 @@ export function Nav() {
 						fontSize={'sm'}
 						fontWeight={600}
 						color={'white'}
-						bg={'blue.400'}
+						
+						border={'2px'}
+						borderColor={'#FFF701'}
+						background='transparent'
+						borderRadius={'3xl'}
 						_hover={{
-							bg: 'blue.800',
+							borderColor: 'blue.800',
 						}}>
-						Sign Up
+						Register
 					</Button>
 				</Stack>
 			</Flex>
@@ -148,7 +159,7 @@ const DesktopNav = () => {
 	const popoverContentBgColor = useColorModeValue('white', 'gray.800');
 
 	return (
-		<Stack direction={'row'} spacing={4}>
+		<Stack direction={'row'} spacing={4} ustifyContent={'center'} alignItems='center' display='flex' flexDirection={'row'}>
 			{NAV_ITEMS.map((navItem) => (
 				<Box key={navItem.label}>
 					<Popover trigger={'hover'} placement={'bottom-start'}>
@@ -175,7 +186,7 @@ const DesktopNav = () => {
 								p={4}
 								rounded={'xl'}
 								minW={'sm'}>
-								<Stack>
+								<Stack bg='red.900'>
 									{navItem.children.map((child) => (
 										<DesktopSubNav key={child.label} {...child} />
 									))}

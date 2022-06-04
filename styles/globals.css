@@ -33,19 +33,11 @@ a {
 .label-dkyS18j2{
   visibility: hidden !important;
 }
-.tv-widget-chart:not(.tv-widget-chart--transparent){
-  background-color: black !important;
-}
+
 :root {
   /* Your default theme */
   
 
-  --background: black;
-  --foreground: black;
-  --a:teal
-}
-
-[data-theme='white'] {
-  --background: black;
-  --foreground: black;
+  --background: #121212;
+  --a:white
 }
