@@ -1,0 +1,10 @@
+query UserInfoDocument {
+  userInfoDocument {
+    email
+    name
+    wallet
+    valuePrice
+    document
+    numberTelephone
+  }
+}

@@ -1,0 +1,21 @@
+mutation CreateCycle(
+  $valueUSD: Int!,
+  $useMoney: Boolean!,
+  $moneyUser: Int,
+  $days: String!
+) {
+  createCycle(
+    data: {
+      valueUSD: $valueUSD
+      useMoney:$useMoney
+      moneyUser:$moneyUser
+      days:$days
+    }
+  ) {
+		url
+    status{
+      field
+      message
+    }
+  }
+}

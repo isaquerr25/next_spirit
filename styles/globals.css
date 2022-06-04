@@ -1,0 +1,51 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+#tradingview_widget_wrapper{
+  width: inherit;
+}
+.forexShowcss div div:nth-child(2){
+  
+  background: red;
+  visibility: hidden !important;
+  height: 0;
+}
+
+
+
+.label-dkyS18j2.label-cJj3kEO9.end-dkyS18j2.top-dkyS18j2.snap-dkyS18j2.js-copyright-label{
+  visibility: hidden !important;
+}
+
+.label-dkyS18j2{
+  visibility: hidden !important;
+}
+.tv-widget-chart:not(.tv-widget-chart--transparent){
+  background-color: black !important;
+}
+:root {
+  /* Your default theme */
+  
+
+  --background: black;
+  --foreground: black;
+  --a:teal
+}
+
+[data-theme='white'] {
+  --background: black;
+  --foreground: black;
+}
