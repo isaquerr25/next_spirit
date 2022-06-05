@@ -7,56 +7,49 @@ import {
 	Button,
 	Icon,
 	IconProps,
+	Image,
 } from '@chakra-ui/react';
 
-export default function CallToActionWithIllustration() {
+export default function 	CallToActionWithIllustration() {
 	return (
-		<Container maxW={'5xl'}>
-			<Stack
-				textAlign={'center'}
-				align={'center'}
-				spacing={{ base: 8, md: 10 }}
-				py={{ base: 20, md: 28 }}>
-				<Heading
-					fontWeight={600}
-					fontSize={{ base: '3xl', sm: '4xl', md: '6xl' }}
-					lineHeight={'110%'}>
-          Get your financial freedom the{' '}
-					<Text as={'span'} color={'orange.400'}>
-            easy way
-					</Text>
-				</Heading>
-				<Text color={'gray.500'} maxW={'3xl'}>
-          Since our establishment in 2019, we have been
-					committed to extracting profits from the financial
-					market through our sound operations. In order to
-					help our clients achieve their financial and investment
-					goals. Our professional traders apply their experience
-					in the Forex market and use their knowledge in a
-					variety of tools in order to offer the best course
-					of action for greater profitability.
-				</Text>
-				<Stack spacing={6} direction={'row'}>
-					{/* <Button
-						rounded={'full'}
-						px={6}
-						colorScheme={'orange'}
-						bg={'orange.400'}
-						_hover={{ bg: 'orange.500' }}>
-            Get started
+		<>
+			<Container maxW={'7xl'} >
+				<Stack
+					textAlign={'center'}
+					align={'center'}
+					spacing={{ base: 8, md: 10 }}
+					py={{ base: 10, md: '52' }}>
+					<Heading
+						fontWeight={100}
+						fontSize={{ base: '3xl', sm: '4xl'}}
+						lineHeight={'110%'}>
+         				TENHA LIBERDADE FINANCEIRA COM A{' '}
+						<Text color={'#FFF701'} mt={10} fontWeight={400} fontSize={{ base: '3xl', sm: '4xl', md: '5xl'}}>
+						SPIRIT GOLD
+						</Text>
+					</Heading>
+					<Button borderRadius={'2xl'} 
+						border='2px' 
+						borderColor={'yellow'} 
+						px={90} py={10} 
+						color='yellow' 
+						bg={'blackAlpha.100'} 
+						fontSize={{ base: '3xl', sm: '2xl' }}
+					>
+					CRIE SUA CONTA GRÁTIS
 					</Button>
-					<Button rounded={'full'} px={6}>
-            Learn more
-					</Button> */}
+					
+				
+				
+				
 				</Stack>
-				<Flex w={'full'}>
-					<Illustration
-						height={{ sm: '24rem', lg: '28rem' }}
-						mt={{ base: 12, sm: 16 }}
-					/>
-				</Flex>
-			</Stack>
-		</Container>
+			</Container>
+			<Image
+				width={'100vw'}
+				src={'../bgHome.png'??'./bgHome.png'}
+				alt='Tempest Invest'
+			/>
+		</>
 	);
 }
 

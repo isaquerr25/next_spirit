@@ -20,7 +20,7 @@ export const theme = extendTheme({
 			'200': 'white',
 			'100': 'white',
 			'50': 'white',
-            
+			'yellow':'#FFF701'
 		},
 		Button:{
 			borderColor:'#FFF701',

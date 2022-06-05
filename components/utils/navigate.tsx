@@ -95,17 +95,20 @@ export function Nav() {
 						color={useColorModeValue('gray.800', 'white')}>
 						Logo
 					</Text> */}
-					<Image
-						width={'100px'}
-						src={'../spiritLogo.png'??'./spiritLogo.png'}
-						alt='Tempest Invest'
-					/>
+					<Box w={['100px','100px','25vw']}>
+						<Image
+							width={'150px'}
+							src={'../spiritLogo.png'??'./spiritLogo.png'}
+							alt='Tempest Invest'
+						/>
+					</Box>
 
-					<Flex display={{ base: 'none', md: 'flex' }} ml={10}>
+					<Flex display={{ base: 'none', md: 'flex' }}>
 						<DesktopNav />
 					</Flex>
 				</Flex>
 				<Stack
+					w={'25vw'}
 					flex={{ base: 1, md: 0 }}
 					justify={'flex-end'}
 					direction={'row'}
@@ -159,7 +162,7 @@ const DesktopNav = () => {
 	const popoverContentBgColor = useColorModeValue('white', 'gray.800');
 
 	return (
-		<Stack direction={'row'} spacing={4} ustifyContent={'center'} alignItems='center' display='flex' flexDirection={'row'}>
+		<Stack direction={'row'} spacing={4} justifyContent={'center'}  w={'50vw'} alignItems='center' display='flex' flexDirection={'row'}>
 			{NAV_ITEMS.map((navItem) => (
 				<Box key={navItem.label}>
 					<Popover trigger={'hover'} placement={'bottom-start'}>
